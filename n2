@@ -1,0 +1,10 @@
+def shuf(s,ins):
+  result = [None for _ in range(len(s))] 
+  for i in range(len(s)): 
+    j = ins[i] 
+    result[j] = s[i]
+  print("".join(result))
+
+word = "aaiougrt"
+po = [4,0,2,6,7,3,1,5]
+shuf(word,po)
