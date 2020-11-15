@@ -1,0 +1,19 @@
+def izvl(str):
+   str = str.split(" ")
+   str = str[3]
+   t = ["+",0,0,",",0]
+   if str[2] == "0" and str[3] == "0" and str[4] == "0":
+      print("0")
+   if str[1] == "1":
+      t[0] = "-"
+   if str[2] != "0":
+     t[1] = str[2]
+   else: 
+     t[1] = ""
+   t[2] = str[3]
+   t[4] = str[4]
+   print("".join(t))
+
+
+s = "23103 41/92 91102 10002 20002 39925 49936 52006 74544 555 11001"
+izvl(s)
