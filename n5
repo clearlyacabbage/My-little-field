@@ -1,0 +1,24 @@
+def is_num(num):
+    mum = str(num)
+    x = list(mum)
+    count = 0
+    for i in range(len(x)):
+        x[i] = int(x[i])
+        #print(x[i])
+        if num % x[i] == 0:
+            count += 1
+    if count == len(x):
+        return 1
+    else:
+        return 0
+
+def main(a,b):
+    li = list()
+    for k in range(a,b+1):
+        if  k % 10 == 0:
+            continue
+        if (is_num(k)):
+            li.append(k)
+    print(li)
+            
+main(1,22)
